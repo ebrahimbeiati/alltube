@@ -47,7 +47,7 @@ const VideoDetail = ({ video }) => {
   } = video;
 
   if (!videoId) {
-    return <div>Type in search box please</div>;
+    return <div>Type in search box and then press enter</div>;
   }
 
   const videoSrc = `https://www.youtube.com/embed/${videoId}`;
