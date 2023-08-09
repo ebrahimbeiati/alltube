@@ -3,7 +3,9 @@ import { Grid } from "@mui/material";
 import youtube from "./api/youtube";
 import SearchBar from "./components/SearchBar";
 import VideoList from "./components/VideoList";
-import VideoDetail from "./components/VideoDetail"; // Correct import for VideoDetail component
+import VideoDetail from "./components/VideoDetail";
+
+// Correct import for VideoDetail component
 
 function App() {
   const [videos, setVideos] = useState([]);
