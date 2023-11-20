@@ -20,11 +20,11 @@ const SearchBar = ({ onSubmit }) => {
   };
 
   return (
-    <div style={{ textAlign: "center", fontWeight: "bold", paddingTop: "50px" }}>
-      <Typography variant="h3" gutterBottom style={{ fontWeight: "bold" }}>
+    <div className="textAlign: center, fontWeight: bold, paddingTop: 50px" >
+      <Typography variant="h3" gutterBottom className=" fontWeight: bold">
         Welcome to My Video App
       </Typography>
-      <Paper elevation={4} style={{ borderRadius: "50px" }}>
+      <Paper elevation={4} >
         <TextField
           placeholder="Search"
           fullWidth
@@ -33,18 +33,14 @@ const SearchBar = ({ onSubmit }) => {
           onKeyPress={handleKeyPress}
           InputProps={{
            
-            sx: {
-              borderRadius: "50px",
-              padding: "5px",
-              boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-            },
+       
             startAdornment: (
               <InputAdornment position="start">
                 {/* Add an icon here if needed */}
               </InputAdornment>
             ),
           }}
-          InputLabelProps={{ style: { fontSize: "16px" } }}
+          InputLabelProps={{ classNAme:"fontSize: 16px" } }
         />
       </Paper>
       <br />
