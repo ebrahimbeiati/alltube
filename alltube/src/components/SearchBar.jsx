@@ -28,12 +28,12 @@ const SearchBar = ({ onSubmit }) => {
   return (
     <div
       className="textAlign: center, 
-     padding: 20px"
+     padding: 25px"
     >
       <Typography
         variant="h3"
         gutterBottom
-        className=" fontWeight: bold
+        className=" fontWeight: bold,
       text-center"
       >
         Welcome to My Video App
