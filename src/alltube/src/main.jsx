@@ -4,6 +4,7 @@ import youtube from "./api/youtube";
 import SearchBar from "./components/SearchBar";
 import VideoList from "./components/VideoList";
 import VideoDetail from "./components/VideoDetail";
+import'./index.css'
 
 // Correct import for VideoDetail component
 
