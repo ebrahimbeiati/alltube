@@ -32,7 +32,7 @@ const SearchBar = ({ onSubmit }) => {
           onChange={handleChange}
           onKeyPress={handleKeyPress}
           InputProps={{
-          
+           
             sx: {
               borderRadius: "50px",
               padding: "5px",

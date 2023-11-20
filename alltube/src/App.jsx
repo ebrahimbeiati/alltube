@@ -4,7 +4,6 @@ import youtube from "./api/youtube";
 import SearchBar from "./components/SearchBar";
 import VideoList from "./components/VideoList";
 import VideoDetail from "./components/VideoDetail";
-import'./index.css'
 
 // Correct import for VideoDetail component
 
@@ -19,7 +18,7 @@ function App() {
       params: {
         part: "snippet",
         maxResults: 8,
-        key: process.env.REACT_APP_API_KEY,
+        key: import.meta.env.VITE_REACT_APP_API_KEY,
         q: searchItem,
       },
     });
