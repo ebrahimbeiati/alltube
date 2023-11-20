@@ -1,9 +1,15 @@
 
-import React from "react";
-import { Paper, TextField, Typography, Button, InputBase, InputAdornment } from "@mui/material";
+import React, { useState } from "react";
+import {
+  Paper,
+  TextField,
+  Typography,
+  Button,
+  InputAdornment,
+} from "@mui/material";
 
 const SearchBar = ({ onSubmit }) => {
-  const [searchTerm, setSearchTerm] = React.useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleChange = (e) => {
     setSearchTerm(e.target.value);
@@ -20,11 +26,19 @@ const SearchBar = ({ onSubmit }) => {
   };
 
   return (
-    <div className="textAlign: center, fontWeight: bold, paddingTop: 50px" >
-      <Typography variant="h3" gutterBottom className=" fontWeight: bold">
+    <div
+      className="textAlign: center, 
+     padding: 20px"
+    >
+      <Typography
+        variant="h3"
+        gutterBottom
+        className=" fontWeight: bold
+      text-center"
+      >
         Welcome to My Video App
       </Typography>
-      <Paper elevation={4} >
+      <Paper elevation={4}>
         <TextField
           placeholder="Search"
           fullWidth
@@ -32,15 +46,13 @@ const SearchBar = ({ onSubmit }) => {
           onChange={handleChange}
           onKeyPress={handleKeyPress}
           InputProps={{
-           
-       
             startAdornment: (
               <InputAdornment position="start">
                 {/* Add an icon here if needed */}
               </InputAdornment>
             ),
           }}
-          InputLabelProps={{ classNAme:"fontSize: 16px" } }
+          InputLabelProps={{ className: "fontSize-16px" }} // Corrected class name syntax
         />
       </Paper>
       <br />
@@ -52,3 +64,4 @@ const SearchBar = ({ onSubmit }) => {
 };
 
 export default SearchBar;
+

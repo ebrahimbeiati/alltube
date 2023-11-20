@@ -57,14 +57,14 @@ code {
 }
 
 /* Video list item styles */
-.video-item {
+/* .video-item {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   margin-bottom: 10px;
   border-radius: 8px;
-}
-
+} */
+/* 
 .video-item:hover {
   transform: scale(1.03);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-}
+} */

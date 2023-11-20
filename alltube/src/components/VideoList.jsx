@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import VideoItem from './VideoItem';
 
 const VideoList =({ videos, onVideoSelect})=>{
@@ -8,14 +8,12 @@ const VideoList =({ videos, onVideoSelect})=>{
             key={video.id.videoId}
             video={video}
             onSelectVideo={onVideoSelect}
-            
             />
     ));
     return (
-        <Grid container spacing={4}>
-            
-            {listOfVideos}
-        </Grid>   
+      <Grid container spacing={4}>
+        {listOfVideos}
+      </Grid>
     );
 }
 export default VideoList;
