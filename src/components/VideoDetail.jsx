@@ -70,11 +70,20 @@
 // };
 
 // export default VideoDetail;
+import PropTypes from "prop-types";
 
-import React from "react";
 import { Grid, Paper, Typography, useMediaQuery } from "@mui/material";
 
 const VideoDetail = ({ video }) => {
+  VideoDetail.propTypes = {
+    video: PropTypes.shape({
+      snippet: PropTypes.object,
+      id: PropTypes.object,
+
+      // Define the shape of the snippet object
+      // Add other expected properties within video if needed
+    }),
+  };
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   if (!video) {
