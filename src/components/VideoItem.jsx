@@ -52,13 +52,13 @@ const VideoItem = ({ video, onSelectVideo }) => {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   return (
-    <Grid container spacing={isSmallScreen ? 2 : 0}>
+    <Grid className="container" spacing={isSmallScreen ? 2 : 0}>
       <Grid item xs={12}>
         <Paper
           elevation={6}
           style={{
             cursor: "pointer",
-            height: "100%", // Add appropriate units here (e.g., '100%')
+            height: "100%", 
             width: "100%",
             borderRadius: "10px",
             overflow: "hidden",

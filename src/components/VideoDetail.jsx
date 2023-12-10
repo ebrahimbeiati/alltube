@@ -79,9 +79,6 @@ const VideoDetail = ({ video }) => {
     video: PropTypes.shape({
       snippet: PropTypes.object,
       id: PropTypes.object,
-
-      // Define the shape of the snippet object
-      // Add other expected properties within video if needed
     }),
   };
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
@@ -119,7 +116,7 @@ const VideoDetail = ({ video }) => {
   const videoSrc = `https://www.youtube.com/embed/${videoId}`;
 
   return (
-    <Grid container spacing={1}>
+    <Grid className="container" spacing={1}>
       <Grid item xs={12} sm={12}>
         <Paper style={{ height: isSmallScreen ? "auto" : "60vh" }}>
           <iframe
