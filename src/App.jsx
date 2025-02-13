@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import VideoList from "./components/VideoList";
 import VideoDetail from "./components/VideoDetail";
 import SearchBar from "./components/SearchBar";
@@ -64,7 +64,7 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col items-center bg-gradient-to-br  from-black via-purple-700 to-blue-700 ">
+    <div className="flex flex-col items-center bg-black to-blue-700 ">
       <SearchBar onSubmit={handleSubmit} />
       <div className="grid grid-cols-1 ml-2 md:grid-cols-3 lg:grid-cols-3 gap-4 w-full max-w-auto">
         <div className="md:col-span-2">
